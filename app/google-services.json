@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "815204718846",
+    "project_id": "healthy-mom",
+    "storage_bucket": "healthy-mom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815204718846:android:5ba1f93e15ad9469a3edaf",
+        "android_client_info": {
+          "package_name": "kz.healthymom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815204718846-d5k5iulph3ccf1ajfp6d3mc1aq82g6cl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK7yQjPSNPUrEqHu9ZNbwhKWbYjLBRkCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "815204718846-d5k5iulph3ccf1ajfp6d3mc1aq82g6cl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

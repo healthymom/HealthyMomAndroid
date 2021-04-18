@@ -1,5 +1,6 @@
 package kz.healthymom.di
 
+import kz.healthymom.presentation.faq.FaqViewModel
 import kz.healthymom.presentation.login.LoginViewModel
 import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.dsl.module
@@ -10,4 +11,5 @@ import org.koin.dsl.module
  */
 val viewModelModule = module {
     viewModel { LoginViewModel() }
+    viewModel { FaqViewModel() }
 }

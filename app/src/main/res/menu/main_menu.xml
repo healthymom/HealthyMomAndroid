@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_mom"
+        android:title="home" />
+    <item
+        android:id="@+id/calendar"
+        android:icon="@drawable/ic_mom"
+        android:title="calendar" />
+    <item
+        android:id="@+id/chat"
+        android:icon="@drawable/ic_mom"
+        android:title="chat" />
+    <item
+        android:id="@+id/faq"
+        android:icon="@drawable/ic_mom"
+        android:title="faq" />
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/ic_mom"
+        android:title="account" />
+</menu>

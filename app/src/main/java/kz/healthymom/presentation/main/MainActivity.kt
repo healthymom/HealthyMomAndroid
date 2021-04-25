@@ -4,6 +4,7 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
 import kz.healthymom.R
 import kz.healthymom.presentation.account.AccountFragment
+import kz.healthymom.presentation.account.ProfileFragment
 import kz.healthymom.presentation.base.BaseActivity
 import kz.healthymom.presentation.calendar.CalendarFragment
 import kz.healthymom.presentation.chat.ChatFragment
@@ -21,7 +22,7 @@ class MainActivity : BaseActivity(R.layout.activity_main) {
     private val calendarFragment = CalendarFragment.newInstance()
     private val chatFragment = ChatFragment.newInstance()
     private val faqFragment = FaqFragment.newInstance()
-    private val accountFragment = AccountFragment.newInstance()
+    private val accountFragment = ProfileFragment.newInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

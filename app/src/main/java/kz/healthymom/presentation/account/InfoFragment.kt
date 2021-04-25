@@ -1,9 +1,9 @@
-package kz.healthymom.presentation.calendar
+package kz.healthymom.presentation.account
 
 import android.os.Bundle
 import android.view.View
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-import kotlinx.android.synthetic.main.f_calendar.*
+import kotlinx.android.synthetic.main.f_info.*
 import kz.healthymom.R
 import kz.healthymom.presentation.base.BaseFragment
 
@@ -11,9 +11,9 @@ import kz.healthymom.presentation.base.BaseFragment
  * created by: Makhanov Madiyar
  * on: 18.04.2021
  */
-class CalendarFragment : BaseFragment(R.layout.f_calendar), SwipeRefreshLayout.OnRefreshListener {
+class InfoFragment : BaseFragment(R.layout.f_info), SwipeRefreshLayout.OnRefreshListener {
     companion object {
-        fun newInstance() = CalendarFragment()
+        fun newInstance() = InfoFragment()
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

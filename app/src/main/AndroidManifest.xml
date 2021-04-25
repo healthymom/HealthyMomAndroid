@@ -42,6 +42,11 @@
         </activity>
 
 
+        <activity
+            android:name=".presentation.chat.dialog.DialogActivity"
+            android:screenOrientation="portrait"/>
+
+
         <service
             android:name=".presentation.notification.FirebaseService"
             android:exported="false"

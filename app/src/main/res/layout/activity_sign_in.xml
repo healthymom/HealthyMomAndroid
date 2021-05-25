@@ -16,10 +16,10 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_gravity="center"
-            android:src="@mipmap/ic_launcher" />
+            android:src="@drawable/ic_launcher_playstore" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -27,8 +27,9 @@
             android:layout_gravity="center"
             android:layout_margin="16dp"
             android:gravity="center"
-            android:text="The world's fastest messaging app\nIt is free and secure"
-            android:textSize="18sp" />
+            android:textColor="@color/black"
+            android:text="Приложение для будущих мам!"
+            android:textSize="22sp" />
 
     </LinearLayout>
 
@@ -38,12 +39,12 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:backgroundTint="@color/colorAccent"
-        android:paddingHorizontal="16dp"
-        android:paddingVertical="8dp"
-        android:text="Start Messaging"
+        android:paddingHorizontal="22dp"
+        android:paddingVertical="16dp"
+        android:text="Авторизация"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />

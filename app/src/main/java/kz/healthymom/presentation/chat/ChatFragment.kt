@@ -9,6 +9,7 @@ import kotlinx.android.synthetic.main.f_chat.*
 import kz.healthymom.R
 import kz.healthymom.presentation.base.BaseFragment
 import kz.healthymom.presentation.chat.dialog.DialogActivity
+import kz.healthymom.presentation.test.TestActivity
 
 /**
  * created by: Makhanov Madiyar
@@ -34,39 +35,15 @@ class ChatFragment : BaseFragment(R.layout.f_chat), SwipeRefreshLayout.OnRefresh
         l.add(
             Chat(
                 name = "Маханов Мадияр",
-                lastMsg = "Как дела?",
-                time = "14:32",
-                image = ""
-            )
-        )
-        l.add(
-            Chat(
-                name = "Толеби Мурзиятов",
-                lastMsg = "Подкури брат",
-                time = "13:30",
-                image = ""
-            )
-        )
-        l.add(
-            Chat(
-                name = "Данара Укиева",
-                lastMsg = "Гоу",
-                time = "10:21",
-                image = ""
-            )
-        )
-        l.add(
-            Chat(
-                name = "Мурзиятова Алма",
-                lastMsg = "Спишь?",
-                time = "02:05",
+                lastMsg = "Ошибка чтения!",
+                time = "Недавно",
                 image = ""
             )
         )
 
         list.adapter = ChatAdapter(l) {
             Log.d("AfdwsD", "AEFASD")
-            val intent = Intent(requireContext(), DialogActivity::class.java)
+            val intent = Intent(requireContext(), TestActivity::class.java)
             startActivity(intent)
         }
     }

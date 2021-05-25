@@ -3,6 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="kz.healthymom">
 
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <uses-feature
         android:name="android.hardware.biometrics"
         android:required="false" />
@@ -30,8 +37,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,UnusedAttribute">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+
+
         <activity
-            android:name=".presentation.main.MainActivity"
+            android:name=".presentation.login.LoginActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
@@ -40,12 +58,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".presentation.chat.dialog.DialogActivity"
-            android:screenOrientation="portrait"/>
-
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.main.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.test.TestActivity"
+            android:screenOrientation="portrait" />
 
         <service
             android:name=".presentation.notification.FirebaseService"

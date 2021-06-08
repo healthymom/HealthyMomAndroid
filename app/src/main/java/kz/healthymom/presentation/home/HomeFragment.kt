@@ -1,10 +1,12 @@
 package kz.healthymom.presentation.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.f_home.*
+import kz.healthymom.PostActivity
 import kz.healthymom.R
 import kz.healthymom.presentation.base.BaseFragment
 
@@ -22,13 +24,21 @@ class HomeFragment : BaseFragment(R.layout.f_home), SwipeRefreshLayout.OnRefresh
 
         initUI()
         observeLiveData()
+
+        asdfsdf.setOnClickListener {
+            startActivity(Intent(requireContext(), PostActivity::class.java))
+        }
     }
 
     private fun initUI() {
-        swipe.setOnRefreshListener(this)
+        //swipe.setOnRefreshListener(this)
         Picasso.get()
-            .load("https://leleka.com.ua/content/news/004000-005000/photo_beremennosti_08_4747.jpg")
+            .load("https://rd.clinic23.ru/uploads/images/beremennost/14-nedele.jpg")
             .fit().centerCrop().into(imagg)
+
+        Picasso.get()
+            .load("https://yogaland.kz/wp-content/uploads/2016/11/yoga-dlya-beremennyh.jpg")
+            .fit().centerCrop().into(imagg2)
     }
 
     private fun observeLiveData() {
@@ -36,6 +46,6 @@ class HomeFragment : BaseFragment(R.layout.f_home), SwipeRefreshLayout.OnRefresh
     }
 
     override fun onRefresh() {
-        swipe.isRefreshing = false
+        //swipe.isRefreshing = false
     }
 }

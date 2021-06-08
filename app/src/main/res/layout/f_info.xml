@@ -35,7 +35,7 @@
                         android:background="@android:color/transparent"
                         android:hint="ФИО"
                         android:inputType="textMultiLine"
-                        android:text="Маханов Мадияр Азатбекулы"
+                        android:text="Толганай Салыкбаева"
                         android:textSize="18sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -52,7 +52,7 @@
                         android:background="@android:color/transparent"
                         android:hint="Врач"
                         android:inputType="textMultiLine"
-                        android:text="Кабимоллаева Айгерим Сериковна"
+                        android:text="Шабденова Эльмира Дуйсенхановна"
                         android:textSize="18sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -121,7 +121,24 @@
                         android:background="@android:color/transparent"
                         android:hint="Семейное положение"
                         android:inputType="textMultiLine"
-                        android:text="Холост"
+                        android:text="Замужем"
+                        android:textSize="18sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@android:color/transparent">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="Срок беременности"
+                        android:inputType="textMultiLine"
+                        android:text="14 недель"
                         android:textSize="18sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>

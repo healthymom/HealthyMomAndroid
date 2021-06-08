@@ -55,7 +55,7 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.f_account, container, false);
-        showingName = "Маханов Мадияр";
+        showingName = "Толганай Салыкбаева";
 
         CustomCollapsingToolbarLayout collapsingToolbarLayout = root.findViewById(R.id.collapsing_toolbar);
         titleName = root.findViewById(R.id.title_name);

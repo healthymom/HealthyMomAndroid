@@ -62,6 +62,12 @@
             android:name=".presentation.chat.dialog.DialogActivity"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PostActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".presentation.main.MainActivity"
             android:screenOrientation="portrait" />
         <activity

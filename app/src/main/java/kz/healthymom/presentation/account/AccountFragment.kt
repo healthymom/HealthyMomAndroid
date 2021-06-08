@@ -10,6 +10,8 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.f_account.*
+import kz.healthymom.PostActivity
+import kz.healthymom.ProfileActivity
 import kz.healthymom.R
 import kz.healthymom.presentation.base.BaseFragment
 import kz.healthymom.presentation.login.LoginActivity
@@ -47,6 +49,9 @@ class AccountFragment : BaseFragment(R.layout.f_account) {
             .build()
         signInClient = GoogleSignIn.getClient(requireContext(), gso)
 
+        profile_image.setOnClickListener {
+            startActivity(Intent(requireContext(), ProfileActivity::class.java))
+        }
 
         settings.setOnClickListener {
             signOut()

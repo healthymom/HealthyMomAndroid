@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.item_chat.view.*
 import kz.healthymom.R
 
@@ -27,6 +28,9 @@ class ChatAdapter(
     override fun onBindViewHolder(holder: ChatListViewHolder, position: Int) {
         holder.itemView.cont.setOnClickListener {
             onChatPressed(items[position])
+        }
+        if (items[position].image.isNotEmpty()) {
+            Picasso.get().load(items[position].image).into(holder.itemView.profile_image)
         }
         holder.itemView.name.text = items[position].name
         holder.itemView.lastMsg.text = items[position].lastMsg

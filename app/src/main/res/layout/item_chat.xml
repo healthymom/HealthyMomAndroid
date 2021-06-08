@@ -51,7 +51,6 @@
             android:textColor="@color/black_bright"
             android:textSize="16sp" />
 
-
     </LinearLayout>
 
     <TextView
@@ -65,6 +64,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
